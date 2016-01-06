@@ -2,11 +2,12 @@ package main
 
 import (
 	"fmt"
-	"github.com/prasmussen/gdrive/cli"
-	"github.com/prasmussen/gdrive/gdrive"
-	"github.com/prasmussen/gdrive/util"
-	"github.com/voxelbrain/goptions"
 	"os"
+
+	"github.com/singhsaysdotcom/gdrive/cli"
+	"github.com/singhsaysdotcom/gdrive/gdrive"
+	"github.com/singhsaysdotcom/gdrive/util"
+	"github.com/voxelbrain/goptions"
 )
 
 const (

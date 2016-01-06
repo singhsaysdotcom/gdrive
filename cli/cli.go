@@ -1,15 +1,16 @@
 package cli
 
 import (
-	"code.google.com/p/google-api-go-client/drive/v2"
 	"fmt"
-	"github.com/prasmussen/gdrive/gdrive"
-	"github.com/prasmussen/gdrive/util"
 	"io"
 	"mime"
 	"os"
 	"path/filepath"
 	"strings"
+
+	"github.com/singhsaysdotcom/gdrive/gdrive"
+	"github.com/singhsaysdotcom/gdrive/util"
+	"google.golang.org/api/drive/v2"
 )
 
 func List(d *gdrive.Drive, query, titleFilter string, maxResults int, sharedStatus bool, noHeader bool) error {
@@ -185,7 +186,7 @@ func Upload(d *gdrive.Drive, input io.ReadCloser, title string, parentId string,
 	if convert {
 		fmt.Printf("Converting to Google Docs format enabled\n")
 	}
-		
+
 	info, err := d.Files.Insert(f).Convert(convert).Media(input).Do()
 	if err != nil {
 		return fmt.Errorf("An error occurred uploading the document: %v\n", err)

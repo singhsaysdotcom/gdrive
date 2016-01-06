@@ -1,12 +1,13 @@
 package gdrive
 
 import (
-	"code.google.com/p/google-api-go-client/drive/v2"
-	"github.com/prasmussen/gdrive/auth"
-	"github.com/prasmussen/gdrive/config"
-	"github.com/prasmussen/gdrive/util"
 	"net/http"
 	"path/filepath"
+
+	"github.com/singhsaysdotcom/gdrive/auth"
+	"github.com/singhsaysdotcom/gdrive/config"
+	"github.com/singhsaysdotcom/gdrive/util"
+	"google.golang.org/api/drive/v2"
 )
 
 // File paths and names

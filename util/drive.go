@@ -1,9 +1,10 @@
 package util
 
 import (
-	"code.google.com/p/google-api-go-client/drive/v2"
 	"fmt"
 	"strings"
+
+	"google.golang.org/api/drive/v2"
 )
 
 func PreviewUrl(id string) string {
