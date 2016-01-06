@@ -1,11 +1,12 @@
 package auth
 
 import (
-	"code.google.com/p/goauth2/oauth"
 	"errors"
 	"fmt"
-	"github.com/prasmussen/gdrive/util"
 	"net/http"
+
+	"code.google.com/p/goauth2/oauth"
+	"github.com/singhsaysdotcom/gdrive/util"
 )
 
 // Get auth code from user
