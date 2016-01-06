@@ -3,8 +3,9 @@ package config
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/prasmussen/gdrive/util"
 	"io/ioutil"
+
+	"github.com/singhsaysdotcom/gdrive/util"
 )
 
 // Client ID and secrect for installed applications
